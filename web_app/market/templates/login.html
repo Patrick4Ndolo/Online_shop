@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block title %}
+Login Page
+{% endblock %}
+
+{% block content %}
+<body class="text-center">
+    <div class="container">
+        <form method="POST", class="form-signin", style="color:white" novalidate>
+            {{ form.hidden_tag()}}
+            <img class="mb-4" src="/market/images/Patrick online market.jpg">
+            <h1 class="h3 mb-3 font-weight-normal">
+                Please Login
+            </h1>
+            <br>
+            <p>
+                {{ form.username.label() }}
+                {{ form.username(class="form-control", placeholder="User Name")}}
+                {% for error in form.username.errorors %}
+                    <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <br>
+            <p>
+                {{ form.password.label() }}
+                {{ form.password(class="form-control", placeholder="Password")}}
+                {% for error in form.password.errorors %}
+                <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <br>
+            <p>
+                <div class="form-check">
+                    {{ form.remember_me(class="form-check-input") }}
+                    {{ form.remember_me.label(class="form-check-label") }}
+                </div>
+                <small class="text-muted ml-2">
+                    <a href="#">Forgot Password?</a>
+    
+                </small>
+    
+                <div class="checkbox mb-3">
+                    <h6>Do not have an account?</h6>
+                    <a class="btn btn-sm btn-secondary" href="{{ url_for('register_page') }}">Register</a>
+    
+                </div>
+    
+                {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+
+            </p>
+            
+            
+            
+        </form>
+    </div>
+</body>
+{% endblock %}

@@ -1,0 +1,135 @@
+<style>
+    .modal-content {
+        background-color: #212121;
+    }
+</style>
+
+<div id="mymodal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+
+              <h4 class="modal-title">Add New Items</h4>
+
+          </div>
+          <div class="modal-body">
+
+              <form action="" method="post">
+
+                <div class="form-group">
+                    <label1>Name:</label1>
+                    <input type="text" class="form-control" name="name" required="1">
+
+                </div>
+                <div class="form-group">
+                    <label1>Price</label1>
+                    <input type="number" class="form-control" name="price" required="1">
+
+
+                </div>
+                <div class="form-group">
+                    <label1>BarCode:</label1>
+                    <input type="number" class="form-control" name="barcode" required="1">
+
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit">Add New Items</button>
+                    <input type="text" class="form-control" name="name" required="1">
+
+                </div>
+              </form>
+
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+          </div>
+
+      </div>
+
+  </div>
+
+</div>
+
+<!-- Modal -->
+  <div class="modal fade" id="Modal-MoreInfo-{{ item.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">{{ item.name }}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          {{ item.description }}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--PurchaseConfirm-->
+  <div class="modal fade" id="Modal-PurchaseConfirm-{{ item.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">{{ item.name }}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="POST">
+            {{ purchase_form.hidden_tag() }}
+            <h4 class="text-center">
+                Are you sure you want to buy {{ item.name }} for {{ item.price }}$ ?
+            </h4>
+            <br> 
+            <h6 class="text-center">
+              By clicking the purchase button, the item will be purchased promptly.
+            </h6>
+            <br>
+            <input id="purchased_item" name="purchased_item" type="hidden" value="{{item.name}}">
+            {{ purchase_form.submit(class="btn btn-outline-success btn-block") }}
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Edit-->
+  <div class="modal fade" id="Modal-modaledit-{{ item.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">{{ item.name }}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="POST">
+            {{ edit_form.hidden_tag() }}
+            <h4 class="text-center">
+                Are you sure you want to edit {{ item.name }}?
+            </h4>
+            <br> 
+            
+            <input id="edited_item" name="edit_item" type="hidden" value="{{item.name}}">
+            {{ edit_form.submit(class="btn btn-outline-success btn-block") }}
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
