@@ -12,11 +12,11 @@ About
 5- It has a column to accommodate items purchased by the authenticated user.
 
 Website Screenshots.
-![Screenshot from 2023-07-09 16-04-28](https://github.com/Patrick4Ndolo/Online_shop/assets/55972260/8cef715e-0421-4609-ad4d-7bff456cfbbf)
-![Screenshot from 2023-07-09 16-04-42](https://github.com/Patrick4Ndolo/Online_shop/assets/55972260/75c6eebb-3d25-43ca-bac8-a564266f861d)
-![Screenshot from 2023-07-09 16-05-25](https://github.com/Patrick4Ndolo/Online_shop/assets/55972260/add0d2e0-278d-4d29-8510-ff6ba9e4b71c)
-![Screenshot from 2023-07-09 16-05-47](https://github.com/Patrick4Ndolo/Online_shop/assets/55972260/5da88cc3-45f0-45c7-ac88-e45c0316ec84)
-![Screenshot from 2023-07-09 16-05-59](https://github.com/Patrick4Ndolo/Online_shop/assets/55972260/6e91d1fd-107d-4bb7-acc4-a4010f182977)
-![Screenshot from 2023-07-09 16-06-13](https://github.com/Patrick4Ndolo/Online_shop/assets/55972260/cd6a5149-b9b8-4f54-95ea-eb4235e9c4e0)
-![Screenshot from 2023-07-09 16-06-32](https://github.com/Patrick4Ndolo/Online_shop/assets/55972260/6455d888-4617-4068-babc-c69651832288)
+![Screenshot from 2023-07-09 16-04-28](https://github.com/Patrick4Ndolo/Online_shop/assets/55972260/d20ba15e-a591-447d-b77a-ad9ed5f30281)
+![Screenshot from 2023-07-09 16-04-42](https://github.com/Patrick4Ndolo/Online_shop/assets/55972260/3e9073f3-d08a-4542-80e9-05b1b09af127)
+![Screenshot from 2023-07-09 16-05-25](https://github.com/Patrick4Ndolo/Online_shop/assets/55972260/56d7642c-e172-4b42-b574-ea1b7c29c30e)
+![Screenshot from 2023-07-09 16-05-47](https://github.com/Patrick4Ndolo/Online_shop/assets/55972260/ca0a61ce-ff40-46df-ac99-ac86dce542f9)
+![Screenshot from 2023-07-09 16-05-59](https://github.com/Patrick4Ndolo/Online_shop/assets/55972260/6c360ea0-5afd-44ce-a37d-0812b0e58921)
+![Screenshot from 2023-07-09 16-07-07](https://github.com/Patrick4Ndolo/Online_shop/assets/55972260/e4f97ad0-3386-43d3-9509-72f208bb5f51)
+
 
